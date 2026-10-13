@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="AgendaMedica.BL/AgendaMedica.BL.csproj" Id="3d02a122-63e2-46d8-8024-d0a428c47f87" />
+  <Project Path="AgendaMedica.DAL/AgendaMedica.DAL.csproj" Id="18df01ed-61af-472a-8b71-941d4bc2a3f8" />
+  <Project Path="AgendaMedica.UI/AgendaMedica.UI.csproj" Id="9d2792e9-3a1c-42f3-b67a-4d4684b353af" />
+</Solution>
