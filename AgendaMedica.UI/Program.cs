@@ -16,7 +16,11 @@ namespace AgendaMedica.UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            //Application.Run(new Form1());
+            //Application.Run(new FrmPaciente());
+            //Application.Run(new FrmPrincipal());
+            Application.Run(new FrmLogin());
+
         }
     }
 }
