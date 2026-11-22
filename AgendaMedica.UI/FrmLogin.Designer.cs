@@ -30,9 +30,9 @@
         {
             this.btnIngresar = new System.Windows.Forms.Button();
             this.lblUsuario = new System.Windows.Forms.Label();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtContra = new System.Windows.Forms.TextBox();
             this.lblContra = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnIngresar
@@ -54,13 +54,6 @@
             this.lblUsuario.TabIndex = 1;
             this.lblUsuario.Text = "Ingrese el usuario:";
             // 
-            // txtUsuario
-            // 
-            this.txtUsuario.Location = new System.Drawing.Point(160, 30);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(111, 22);
-            this.txtUsuario.TabIndex = 2;
-            // 
             // txtContra
             // 
             this.txtContra.Location = new System.Drawing.Point(187, 84);
@@ -78,18 +71,27 @@
             this.lblContra.TabIndex = 4;
             this.lblContra.Text = "Ingrese la contraseña:";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(166, 27);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.TabIndex = 5;
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(331, 223);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.lblContra);
             this.Controls.Add(this.txtContra);
-            this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.btnIngresar);
             this.Name = "FrmLogin";
             this.Text = "FrmLogin";
+            this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -99,8 +101,8 @@
 
         private System.Windows.Forms.Button btnIngresar;
         private System.Windows.Forms.Label lblUsuario;
-        private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.TextBox txtContra;
         private System.Windows.Forms.Label lblContra;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

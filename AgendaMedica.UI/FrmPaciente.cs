@@ -72,29 +72,6 @@ namespace AgendaMedica.UI
                 MessageBox.Show(ex.Message);
             }
         }
-
-        private void btnEliminar_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (idPaciente == 0)
-                {
-                    MessageBox.Show("Seleccione un paciente a eliminar");
-                    return;
-                }
-                PacienteDAL dal = new PacienteDAL();
-                dal.Eliminar(idPaciente);
-
-                CargarPacientes();
-                Limpiar();
-                MessageBox.Show("Paciente eliminado");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
         private void btnEditar_Click(object sender, EventArgs e)
         {
             try
@@ -135,6 +112,10 @@ namespace AgendaMedica.UI
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+
             if (e.RowIndex >= 0)
             {
                 idPaciente = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["id_paciente"].Value);
@@ -150,6 +131,8 @@ namespace AgendaMedica.UI
                 txtCorreo.Text = dataGridView1.Rows[e.RowIndex].Cells["correo"].Value.ToString();
 
                 dateTimePicker1.Value = Convert.ToDateTime(dataGridView1.Rows[e.RowIndex].Cells["fecha_nacimiento"].Value);
+
+                
             }
 
         }

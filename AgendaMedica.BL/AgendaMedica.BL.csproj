@@ -57,6 +57,7 @@
     <Compile Include="Modelos\HistorialMedico.cs" />
     <Compile Include="Modelos\Medico.cs" />
     <Compile Include="Modelos\Paciente.cs" />
+    <Compile Include="Modelos\Persona.cs" />
     <Compile Include="Modelos\Rol.cs" />
     <Compile Include="Modelos\Usuario.cs" />
     <Compile Include="Program.cs" />

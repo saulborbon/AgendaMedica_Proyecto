@@ -107,6 +107,7 @@
     <Compile Include="Registros\EspecialidadDAL.cs" />
     <Compile Include="Registros\HistorialMedicoDAL.cs" />
     <Compile Include="Registros\MedicoDAL.cs" />
+    <Compile Include="Registros\MedicoEspecialidadDAL.cs" />
     <Compile Include="Registros\PacienteDAL.cs" />
     <Compile Include="Registros\RolDAL.cs" />
     <Compile Include="Registros\UsuarioDAL.cs" />

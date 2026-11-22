@@ -17,6 +17,6 @@ namespace AgendaMedica.BL.Modelos
         public int DuracionMinutos { get; set; }
         public string TipoCita { get; set; }
         public string EstadoCita { get; set; }
-
     }
 }
+    

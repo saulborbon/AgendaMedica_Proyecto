@@ -13,10 +13,19 @@ namespace AgendaMedica.BL.Servicios
         {
             if (string.IsNullOrWhiteSpace(medico.Cedula))
                 throw new Exception("La cédula es obligatoria");
+
             if (string.IsNullOrWhiteSpace(medico.Nombre))
                 throw new Exception("El nombre es obligatorio");
+
             if (string.IsNullOrWhiteSpace(medico.Apellido))
                 throw new Exception("El apellido es obligatorio");
+
+            if (string.IsNullOrWhiteSpace(medico.Telefono))
+                throw new Exception("El teléfono es obligatorio");
+
+            if (string.IsNullOrWhiteSpace(medico.Correo))
+                throw new Exception("El correo es obligatorio");
+
         }
     }
 }

@@ -6,14 +6,9 @@ using System.Threading.Tasks;
 
 namespace AgendaMedica.BL.Modelos
 {
-    public class Paciente
+    public class Paciente: Persona
     {
         public int IdPaciente { get; set; }
-        public string Cedula { get; set; }
-        public string Nombre { get; set; }
-        public string Apellido { get; set; }
-        public string Telefono { get; set; }
-        public string Correo { get; set; }
         public DateTime FechaNacimiento { get; set; }
     }
 }

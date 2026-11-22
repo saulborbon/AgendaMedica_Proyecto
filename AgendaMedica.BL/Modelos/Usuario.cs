@@ -12,6 +12,6 @@ namespace AgendaMedica.BL.Modelos
         public int IdRol { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
-        public bool Estado { get; set; }
+        public string Estado { get; set; }
     }
 }

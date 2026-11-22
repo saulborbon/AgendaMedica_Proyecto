@@ -105,6 +105,134 @@ namespace AgendaMedica.DAL.Registros
                 cmd.ExecuteNonQuery();
             }
         }
+        public bool ExisteSolapamiento(int idMedico, DateTime fecha, TimeSpan horaInicio, TimeSpan horaFin)
+        {
+            ConexionBD conexion = new ConexionBD();
+
+            using (MySqlConnection con = conexion.ObtenerConexion())
+            {
+                con.Open();
+
+                string sql = @"SELECT COUNT(*)FROM citas WHERE id_medico=@IdMedico AND fecha=@Fecha
+                             AND (@HoraInicio < hora_fin AND @HoraFin > hora_inicio)";
+
+
+                MySqlCommand cmd = new MySqlCommand(sql, con);
+
+                cmd.Parameters.AddWithValue("@IdMedico", idMedico);
+                cmd.Parameters.AddWithValue("@Fecha", fecha);
+                cmd.Parameters.AddWithValue("@HoraInicio", horaInicio);
+                cmd.Parameters.AddWithValue("@HoraFin", horaFin);
+
+                int cantidad = Convert.ToInt32(cmd.ExecuteScalar());
+
+                return cantidad > 0;
+            }
+        }
+        public bool PacienteOcupado(int idPaciente, DateTime fecha, TimeSpan horaInicio, TimeSpan horaFin)
+        {
+            ConexionBD conexion = new ConexionBD();
+
+            using (MySqlConnection con = conexion.ObtenerConexion())
+            {
+                con.Open();
+
+                string sql = @"SELECT COUNT(*)FROM citas WHERE id_paciente = @IdPaciente AND fecha = @Fecha
+                             AND (@HoraInicio < hora_fin AND @HoraFin > hora_inicio)";
+
+                MySqlCommand cmd = new MySqlCommand(sql, con);
+
+                cmd.Parameters.AddWithValue("@IdPaciente", idPaciente);
+                cmd.Parameters.AddWithValue("@Fecha", fecha);
+                cmd.Parameters.AddWithValue("@HoraInicio", horaInicio);
+                cmd.Parameters.AddWithValue("@HoraFin", horaFin);
+
+
+                int cantidad = Convert.ToInt32(cmd.ExecuteScalar());
+
+                return cantidad > 0;
+            }
+        }
+        public DataTable CitasPorDia(DateTime fecha)
+        {
+            ConexionBD conexion = new ConexionBD();
+
+            using (MySqlConnection con = conexion.ObtenerConexion())
+            {
+                con.Open();
+
+                string sql = @"SELECT * FROM citas WHERE fecha = @Fecha";
+
+                MySqlDataAdapter da = new MySqlDataAdapter(sql, con);
+
+                da.SelectCommand.Parameters.AddWithValue("@Fecha", fecha);
+
+                DataTable dt = new DataTable();
+
+                da.Fill(dt);
+
+                return dt;
+            }
+        }
+        public DataTable CitasMedico(int idMedico)
+        {
+            ConexionBD conexion = new ConexionBD();
+
+            using (MySqlConnection con = conexion.ObtenerConexion())
+            {
+                con.Open();
+
+                string sql = @"SELECT * FROM citas WHERE id_medico = @IdMedico";
+
+                MySqlDataAdapter da = new MySqlDataAdapter(sql, con);
+
+                da.SelectCommand.Parameters.AddWithValue("@IdMedico", idMedico);
+
+                DataTable dt = new DataTable();
+
+                da.Fill(dt);
+
+                return dt;
+            }
+        }
+        public DataTable CitasCanceladas()
+        {
+            ConexionBD conexion = new ConexionBD();
+
+            using (MySqlConnection con = conexion.ObtenerConexion())
+            {
+                con.Open();
+
+                string sql = @"SELECT * FROM citas WHERE estado_cita='Cancelada'";
+
+                MySqlDataAdapter da = new MySqlDataAdapter(sql, con);
+
+                DataTable dt = new DataTable();
+
+                da.Fill(dt);
+
+                return dt;
+            }
+        }
+        public DataTable PacientesAtendidos()
+        {
+            ConexionBD conexion = new ConexionBD();
+
+            using (MySqlConnection con = conexion.ObtenerConexion())
+            {
+                con.Open();
+
+                string sql = @"SELECT * FROM citas WHERE estado_cita='Atendida'";
+
+                MySqlDataAdapter da = new MySqlDataAdapter(sql, con);
+
+                DataTable dt = new DataTable();
+
+                da.Fill(dt);
+
+                return dt;
+            }
+        }
 
     }
 }
