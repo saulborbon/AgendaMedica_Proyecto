@@ -42,9 +42,10 @@
             // 
             // btnPacientes
             // 
-            this.btnPacientes.Location = new System.Drawing.Point(172, 60);
+            this.btnPacientes.Location = new System.Drawing.Point(129, 49);
+            this.btnPacientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPacientes.Name = "btnPacientes";
-            this.btnPacientes.Size = new System.Drawing.Size(96, 39);
+            this.btnPacientes.Size = new System.Drawing.Size(72, 32);
             this.btnPacientes.TabIndex = 0;
             this.btnPacientes.Text = "Pacientes";
             this.btnPacientes.UseVisualStyleBackColor = true;
@@ -52,9 +53,10 @@
             // 
             // btnMedicos
             // 
-            this.btnMedicos.Location = new System.Drawing.Point(12, 117);
+            this.btnMedicos.Location = new System.Drawing.Point(9, 95);
+            this.btnMedicos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMedicos.Name = "btnMedicos";
-            this.btnMedicos.Size = new System.Drawing.Size(118, 34);
+            this.btnMedicos.Size = new System.Drawing.Size(88, 28);
             this.btnMedicos.TabIndex = 1;
             this.btnMedicos.Text = "Medicos";
             this.btnMedicos.UseVisualStyleBackColor = true;
@@ -62,9 +64,10 @@
             // 
             // btnCitas
             // 
-            this.btnCitas.Location = new System.Drawing.Point(301, 115);
+            this.btnCitas.Location = new System.Drawing.Point(226, 93);
+            this.btnCitas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCitas.Name = "btnCitas";
-            this.btnCitas.Size = new System.Drawing.Size(112, 36);
+            this.btnCitas.Size = new System.Drawing.Size(84, 29);
             this.btnCitas.TabIndex = 2;
             this.btnCitas.Text = "Citas";
             this.btnCitas.UseVisualStyleBackColor = true;
@@ -72,19 +75,22 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(591, 93);
+            this.btnSalir.BackColor = System.Drawing.Color.Red;
+            this.btnSalir.Location = new System.Drawing.Point(443, 76);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(84, 34);
+            this.btnSalir.Size = new System.Drawing.Size(63, 28);
             this.btnSalir.TabIndex = 3;
             this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnEspecialidad
             // 
-            this.btnEspecialidad.Location = new System.Drawing.Point(12, 60);
+            this.btnEspecialidad.Location = new System.Drawing.Point(9, 49);
+            this.btnEspecialidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEspecialidad.Name = "btnEspecialidad";
-            this.btnEspecialidad.Size = new System.Drawing.Size(118, 39);
+            this.btnEspecialidad.Size = new System.Drawing.Size(88, 32);
             this.btnEspecialidad.TabIndex = 4;
             this.btnEspecialidad.Text = "Especialidad";
             this.btnEspecialidad.UseVisualStyleBackColor = true;
@@ -94,17 +100,19 @@
             // 
             this.lbltitulo.AutoSize = true;
             this.lbltitulo.Font = new System.Drawing.Font("Microsoft JhengHei", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltitulo.Location = new System.Drawing.Point(89, 9);
+            this.lbltitulo.Location = new System.Drawing.Point(67, 7);
+            this.lbltitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbltitulo.Name = "lbltitulo";
-            this.lbltitulo.Size = new System.Drawing.Size(213, 29);
+            this.lbltitulo.Size = new System.Drawing.Size(177, 24);
             this.lbltitulo.TabIndex = 5;
             this.lbltitulo.Text = "AGENDA MEDICA";
             // 
             // btnHmedico
             // 
-            this.btnHmedico.Location = new System.Drawing.Point(301, 60);
+            this.btnHmedico.Location = new System.Drawing.Point(226, 49);
+            this.btnHmedico.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnHmedico.Name = "btnHmedico";
-            this.btnHmedico.Size = new System.Drawing.Size(112, 39);
+            this.btnHmedico.Size = new System.Drawing.Size(84, 32);
             this.btnHmedico.TabIndex = 6;
             this.btnHmedico.Text = "Historial Medico";
             this.btnHmedico.UseVisualStyleBackColor = true;
@@ -112,9 +120,10 @@
             // 
             // btnUsuarios
             // 
-            this.btnUsuarios.Location = new System.Drawing.Point(172, 117);
+            this.btnUsuarios.Location = new System.Drawing.Point(129, 95);
+            this.btnUsuarios.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.Size = new System.Drawing.Size(96, 34);
+            this.btnUsuarios.Size = new System.Drawing.Size(72, 28);
             this.btnUsuarios.TabIndex = 7;
             this.btnUsuarios.Text = "Usuarios";
             this.btnUsuarios.UseVisualStyleBackColor = true;
@@ -122,9 +131,10 @@
             // 
             // btnRoles
             // 
-            this.btnRoles.Location = new System.Drawing.Point(438, 60);
+            this.btnRoles.Location = new System.Drawing.Point(328, 49);
+            this.btnRoles.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRoles.Name = "btnRoles";
-            this.btnRoles.Size = new System.Drawing.Size(84, 39);
+            this.btnRoles.Size = new System.Drawing.Size(63, 32);
             this.btnRoles.TabIndex = 8;
             this.btnRoles.Text = "Roles";
             this.btnRoles.UseVisualStyleBackColor = true;
@@ -132,9 +142,10 @@
             // 
             // btnReportes
             // 
-            this.btnReportes.Location = new System.Drawing.Point(438, 117);
+            this.btnReportes.Location = new System.Drawing.Point(328, 95);
+            this.btnReportes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Size = new System.Drawing.Size(84, 34);
+            this.btnReportes.Size = new System.Drawing.Size(63, 28);
             this.btnReportes.TabIndex = 9;
             this.btnReportes.Text = "Reportes";
             this.btnReportes.UseVisualStyleBackColor = true;
@@ -142,10 +153,11 @@
             // 
             // FrmPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(750, 440);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(562, 358);
             this.Controls.Add(this.btnReportes);
             this.Controls.Add(this.btnRoles);
             this.Controls.Add(this.btnUsuarios);
@@ -157,6 +169,7 @@
             this.Controls.Add(this.btnMedicos);
             this.Controls.Add(this.btnPacientes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

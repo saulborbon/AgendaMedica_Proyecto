@@ -40,74 +40,87 @@
             // 
             // btnCitaDia
             // 
-            this.btnCitaDia.Location = new System.Drawing.Point(31, 31);
+            this.btnCitaDia.BackColor = System.Drawing.Color.Beige;
+            this.btnCitaDia.Location = new System.Drawing.Point(23, 25);
+            this.btnCitaDia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCitaDia.Name = "btnCitaDia";
-            this.btnCitaDia.Size = new System.Drawing.Size(90, 40);
+            this.btnCitaDia.Size = new System.Drawing.Size(68, 32);
             this.btnCitaDia.TabIndex = 0;
             this.btnCitaDia.Text = "Citas por día";
-            this.btnCitaDia.UseVisualStyleBackColor = true;
+            this.btnCitaDia.UseVisualStyleBackColor = false;
             this.btnCitaDia.Click += new System.EventHandler(this.btnCitaDia_Click);
             // 
             // btnCitaMedico
             // 
-            this.btnCitaMedico.Location = new System.Drawing.Point(148, 34);
+            this.btnCitaMedico.BackColor = System.Drawing.Color.Beige;
+            this.btnCitaMedico.Location = new System.Drawing.Point(111, 28);
+            this.btnCitaMedico.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCitaMedico.Name = "btnCitaMedico";
-            this.btnCitaMedico.Size = new System.Drawing.Size(118, 37);
+            this.btnCitaMedico.Size = new System.Drawing.Size(88, 30);
             this.btnCitaMedico.TabIndex = 1;
             this.btnCitaMedico.Text = "Cita por Medico";
-            this.btnCitaMedico.UseVisualStyleBackColor = true;
+            this.btnCitaMedico.UseVisualStyleBackColor = false;
             this.btnCitaMedico.Click += new System.EventHandler(this.btnCitaMedico_Click);
             // 
             // btnCancelada
             // 
-            this.btnCancelada.Location = new System.Drawing.Point(295, 34);
+            this.btnCancelada.BackColor = System.Drawing.Color.Salmon;
+            this.btnCancelada.Location = new System.Drawing.Point(221, 28);
+            this.btnCancelada.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCancelada.Name = "btnCancelada";
-            this.btnCancelada.Size = new System.Drawing.Size(91, 38);
+            this.btnCancelada.Size = new System.Drawing.Size(68, 31);
             this.btnCancelada.TabIndex = 2;
             this.btnCancelada.Text = "Canceladas";
-            this.btnCancelada.UseVisualStyleBackColor = true;
+            this.btnCancelada.UseVisualStyleBackColor = false;
             this.btnCancelada.Click += new System.EventHandler(this.btnCancelada_Click);
             // 
             // btnAtendida
             // 
-            this.btnAtendida.Location = new System.Drawing.Point(428, 34);
+            this.btnAtendida.BackColor = System.Drawing.Color.SpringGreen;
+            this.btnAtendida.Location = new System.Drawing.Point(321, 28);
+            this.btnAtendida.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAtendida.Name = "btnAtendida";
-            this.btnAtendida.Size = new System.Drawing.Size(89, 40);
+            this.btnAtendida.Size = new System.Drawing.Size(67, 32);
             this.btnAtendida.TabIndex = 3;
             this.btnAtendida.Text = "Atendidas";
-            this.btnAtendida.UseVisualStyleBackColor = true;
+            this.btnAtendida.UseVisualStyleBackColor = false;
             this.btnAtendida.Click += new System.EventHandler(this.btnAtendida_Click);
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 123);
+            this.dataGridView1.Location = new System.Drawing.Point(9, 100);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(597, 248);
+            this.dataGridView1.Size = new System.Drawing.Size(448, 202);
             this.dataGridView1.TabIndex = 4;
             // 
             // dtpFecha
             // 
-            this.dtpFecha.Location = new System.Drawing.Point(172, 95);
+            this.dtpFecha.Location = new System.Drawing.Point(129, 77);
+            this.dtpFecha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(200, 22);
+            this.dtpFecha.Size = new System.Drawing.Size(151, 20);
             this.dtpFecha.TabIndex = 5;
             // 
             // cmbMedico
             // 
             this.cmbMedico.FormattingEnabled = true;
-            this.cmbMedico.Location = new System.Drawing.Point(31, 93);
+            this.cmbMedico.Location = new System.Drawing.Point(23, 76);
+            this.cmbMedico.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbMedico.Name = "cmbMedico";
-            this.cmbMedico.Size = new System.Drawing.Size(121, 24);
+            this.cmbMedico.Size = new System.Drawing.Size(92, 21);
             this.cmbMedico.TabIndex = 6;
             // 
             // FrmReportes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.LightBlue;
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.cmbMedico);
             this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.dataGridView1);
@@ -115,6 +128,7 @@
             this.Controls.Add(this.btnCancelada);
             this.Controls.Add(this.btnCitaMedico);
             this.Controls.Add(this.btnCitaDia);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmReportes";
             this.Text = "FrmReportes";
             this.Load += new System.EventHandler(this.FrmReportes_Load);

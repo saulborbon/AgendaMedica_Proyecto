@@ -50,149 +50,173 @@
             // lblCedula
             // 
             this.lblCedula.AutoSize = true;
-            this.lblCedula.Location = new System.Drawing.Point(25, 27);
+            this.lblCedula.Location = new System.Drawing.Point(19, 22);
+            this.lblCedula.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCedula.Name = "lblCedula";
-            this.lblCedula.Size = new System.Drawing.Size(113, 16);
+            this.lblCedula.Size = new System.Drawing.Size(91, 13);
             this.lblCedula.TabIndex = 0;
             this.lblCedula.Text = "Ingrese la cédula:";
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(25, 70);
+            this.lblNombre.Location = new System.Drawing.Point(19, 57);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(118, 16);
+            this.lblNombre.Size = new System.Drawing.Size(94, 13);
             this.lblNombre.TabIndex = 1;
             this.lblNombre.Text = "Ingrese el nombre:";
             // 
             // lblApellido
             // 
             this.lblApellido.AutoSize = true;
-            this.lblApellido.Location = new System.Drawing.Point(25, 111);
+            this.lblApellido.Location = new System.Drawing.Point(19, 90);
+            this.lblApellido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(121, 16);
+            this.lblApellido.Size = new System.Drawing.Size(95, 13);
             this.lblApellido.TabIndex = 2;
             this.lblApellido.Text = "Ingrese el apellido:";
             // 
             // lblTelefono
             // 
             this.lblTelefono.AutoSize = true;
-            this.lblTelefono.Location = new System.Drawing.Point(25, 154);
+            this.lblTelefono.Location = new System.Drawing.Point(19, 125);
+            this.lblTelefono.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(178, 16);
+            this.lblTelefono.Size = new System.Drawing.Size(143, 13);
             this.lblTelefono.TabIndex = 3;
             this.lblTelefono.Text = "Ingrese el número teléfonico:";
             // 
             // lblCorreo
             // 
             this.lblCorreo.AutoSize = true;
-            this.lblCorreo.Location = new System.Drawing.Point(25, 200);
+            this.lblCorreo.Location = new System.Drawing.Point(19, 162);
+            this.lblCorreo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(111, 16);
+            this.lblCorreo.Size = new System.Drawing.Size(89, 13);
             this.lblCorreo.TabIndex = 4;
             this.lblCorreo.Text = "Ingrese el correo:";
             // 
             // lblFechaNacimiento
             // 
             this.lblFechaNacimiento.AutoSize = true;
-            this.lblFechaNacimiento.Location = new System.Drawing.Point(25, 242);
+            this.lblFechaNacimiento.Location = new System.Drawing.Point(19, 197);
+            this.lblFechaNacimiento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFechaNacimiento.Name = "lblFechaNacimiento";
-            this.lblFechaNacimiento.Size = new System.Drawing.Size(138, 16);
+            this.lblFechaNacimiento.Size = new System.Drawing.Size(111, 13);
             this.lblFechaNacimiento.TabIndex = 5;
             this.lblFechaNacimiento.Text = "Fecha de Nacimiento:";
             // 
             // txtCedula
             // 
-            this.txtCedula.Location = new System.Drawing.Point(157, 24);
+            this.txtCedula.Location = new System.Drawing.Point(118, 20);
+            this.txtCedula.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCedula.Name = "txtCedula";
-            this.txtCedula.Size = new System.Drawing.Size(100, 22);
+            this.txtCedula.Size = new System.Drawing.Size(76, 20);
             this.txtCedula.TabIndex = 6;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(157, 67);
+            this.txtNombre.Location = new System.Drawing.Point(118, 54);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(100, 22);
+            this.txtNombre.Size = new System.Drawing.Size(76, 20);
             this.txtNombre.TabIndex = 7;
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(157, 108);
+            this.txtApellido.Location = new System.Drawing.Point(118, 88);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(100, 22);
+            this.txtApellido.Size = new System.Drawing.Size(76, 20);
             this.txtApellido.TabIndex = 8;
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(209, 148);
+            this.txtTelefono.Location = new System.Drawing.Point(157, 120);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(100, 22);
+            this.txtTelefono.Size = new System.Drawing.Size(76, 20);
             this.txtTelefono.TabIndex = 9;
             // 
             // txtCorreo
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(155, 194);
+            this.txtCorreo.Location = new System.Drawing.Point(116, 158);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(175, 22);
+            this.txtCorreo.Size = new System.Drawing.Size(132, 20);
             this.txtCorreo.TabIndex = 10;
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(169, 242);
+            this.dateTimePicker1.Location = new System.Drawing.Point(127, 197);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(120, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(91, 20);
             this.dateTimePicker1.TabIndex = 11;
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(356, 19);
+            this.btnGuardar.BackColor = System.Drawing.Color.Blue;
+            this.btnGuardar.ForeColor = System.Drawing.Color.White;
+            this.btnGuardar.Location = new System.Drawing.Point(267, 15);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(75, 36);
+            this.btnGuardar.Size = new System.Drawing.Size(56, 29);
             this.btnGuardar.TabIndex = 12;
             this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(356, 82);
+            this.btnEditar.BackColor = System.Drawing.Color.Coral;
+            this.btnEditar.ForeColor = System.Drawing.Color.White;
+            this.btnEditar.Location = new System.Drawing.Point(267, 67);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(75, 36);
+            this.btnEditar.Size = new System.Drawing.Size(56, 29);
             this.btnEditar.TabIndex = 14;
             this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.UseVisualStyleBackColor = false;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(356, 141);
+            this.btnLimpiar.BackColor = System.Drawing.Color.DimGray;
+            this.btnLimpiar.ForeColor = System.Drawing.Color.White;
+            this.btnLimpiar.Location = new System.Drawing.Point(267, 115);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(75, 37);
+            this.btnLimpiar.Size = new System.Drawing.Size(56, 30);
             this.btnLimpiar.TabIndex = 15;
             this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.UseVisualStyleBackColor = false;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(2, 270);
+            this.dataGridView1.Location = new System.Drawing.Point(2, 219);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(637, 202);
+            this.dataGridView1.Size = new System.Drawing.Size(478, 164);
             this.dataGridView1.TabIndex = 16;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // FrmPaciente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(643, 480);
+            this.BackColor = System.Drawing.Color.LightBlue;
+            this.ClientSize = new System.Drawing.Size(482, 390);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnEditar);
@@ -209,6 +233,8 @@
             this.Controls.Add(this.lblApellido);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblCedula);
+            this.ForeColor = System.Drawing.Color.Black;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmPaciente";
             this.Text = "FrmPaciente";
             this.Load += new System.EventHandler(this.FrmPaciente_Load);
