@@ -84,5 +84,11 @@ namespace AgendaMedica.UI
             FrmReportes frm = new FrmReportes();
             frm.ShowDialog();
         }
+
+        private void btnHorarioAtencion_Click(object sender, EventArgs e)
+        {
+            FrmHorarioAtencion frm = new FrmHorarioAtencion();
+            frm.ShowDialog();
+        }
     }
 }

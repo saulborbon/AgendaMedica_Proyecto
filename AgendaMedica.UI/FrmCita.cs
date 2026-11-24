@@ -136,6 +136,16 @@ namespace AgendaMedica.UI
                     MessageBox.Show("El paciente ya tiene una cita en esa hora");
                     return;
                 }
+                HorarioAtencionDAL horarioDAL = new HorarioAtencionDAL();
+
+                string diaSemana = cita.Fecha.DayOfWeek.ToString();
+
+                if (!horarioDAL.EstaDentroHorario(cita.IdMedico, diaSemana, cita.HoraInicio))
+                {
+                    MessageBox.Show("La cita está fuera del horario de atención del médico");
+
+                    return;
+                }
 
                 dal.Guardar(cita);
 
